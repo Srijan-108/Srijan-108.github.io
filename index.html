@@ -1,17 +1,18 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>EcoCharge Station - EV Registration</title>
-    <meta name="description" content="Register your electric vehicle at EcoCharge Station for fast, reliable, and eco-friendly charging.">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EV Plate Registration</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Welcome to EV Station Registration</h1>
+  <p>If you scanned a QR code, you're in the right place!</p>
+  <form method="POST" action="https://your-backend-api/endpoint">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="text" name="carNumber" placeholder="Car Number" required><br><br>
+    <input type="text" name="carModel" placeholder="Car Model" required><br><br>
+    <input type="text" name="chargingSpecs" placeholder="Charging Specs" required><br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
 </html>
